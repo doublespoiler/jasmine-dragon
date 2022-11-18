@@ -9,7 +9,7 @@ export default function Tea(props){
         <img src={props.imageUrl} className="tea--card--thumb" alt="tea thumb" />
         <h3 className="tea--card--text">{props.name} - {props.origin} - stock: {props.stock}</h3>
       </div>
-      <button className="tea--card--button" onClick={() => props.whenTeaSold(props.id)}>Sell Cup</button>
+      {/* <button className="tea--card--button" onClick={() => props.whenTeaSold(props.id)}>Sell Cup</button> */}
     </div>
   )
 }

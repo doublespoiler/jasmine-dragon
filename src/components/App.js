@@ -1,14 +1,15 @@
 import React from 'react';
 import Header from './Header';
 import PageControl from './PageControl';
+import Footer from './Footer';
 
-function App() {
+export default function App() {
   return (
     <React.Fragment>
       <Header />
       <PageControl />
+      <Footer />
     </React.Fragment>
   );
 }
 
-export default App;

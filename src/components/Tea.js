@@ -10,8 +10,7 @@ export default function Tea(props){
         <h3 className="tea--card--text">{props.name} - {props.origin} - {props.color} Tea - ${props.price} </h3>
       </div>
       <div className="tea--card--sell">
-        <span className="tea--card--stock">stock: {props.stock} oz</span>
-        <button className="tea--card--button" onClick={() => props.whenTeaSold(props.id)}>Sell Cup</button>
+        <button className="tea--card--button" onClick={() => props.whenTeaSold(props.id)}>Sell Cup <br/> {props.stock} oz.</button>
       </div>
     </div>
   )

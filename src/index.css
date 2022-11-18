@@ -45,20 +45,26 @@ main {
   border: 1px solid black;
   padding: 1rem 1rem;
   display: flex;
-  align-items: center;
+  
   margin: 0.25rem 0;
   justify-content: space-evenly;
 }
 
-.tea--card--thumb{
-  width: 6rem;
-  margin-right: 0.5rem;
+.tea--card--text{
+  display: flex;
+  align-items: center;
 }
 
 .tea--card--sell{
-  background-color: orangered;
-  height: 100%;
-  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.tea--card--thumb{
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
+  margin-right: 0.5rem;
 }
 
 .tea--card--details{
@@ -77,8 +83,13 @@ main {
   width: 15rem;
 }
 
-button{
-  height: 3em;
+.tea--list{
+  width: 90%;
+  margin: auto;
+}
+
+.tea--card--button{
+  width: 4rem;
 }
 
 .main-button{
@@ -96,6 +107,7 @@ button{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: white;
 }
 form{
   margin:auto;

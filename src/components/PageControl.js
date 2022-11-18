@@ -68,7 +68,7 @@ class TeaControl extends React.Component {
 
   handleSellingTea = (id) => {
     let teaToEdit = this.state.masterTeaList.filter(tea => tea.id === id)[0];
-    teaToEdit.stock--;
+    teaToEdit.stock > 0 ? teaToEdit.stock-- : alert("No more of this tea!");
     const editedMasterTeaList = this.state.masterTeaList
       .filter(tea => tea.id !== id)
       .concat(teaToEdit);

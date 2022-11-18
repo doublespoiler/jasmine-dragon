@@ -52,7 +52,7 @@ export default{
         "color": "Herbal",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mate_en_calabaza.jpg/800px-Mate_en_calabaza.jpg",
         "description": "Mate or maté[a] (/ˈmæteɪ/) also known as chimarrão or cimarrón,[b] is a traditional South American caffeine-rich infused drink. It is made by soaking dried leaves of the yerba mate (Ilex paraguariensis), in hot water and is served with a metal straw in a container typically made from a calabash gourd (the mate proper), but also in some areas made from a cattle horn (guampa). ",
-        "stock": 130
+        "stock": 5
       },
 
     ]

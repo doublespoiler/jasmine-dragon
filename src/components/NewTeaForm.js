@@ -21,7 +21,7 @@ export default function NewTeaForm(props){
   return(
     <TemplateForm
       formSubmissionHandler={handleNewTeaFormSubmission}
-      buttonText="Add" 
+      buttonText="Add Tea" 
       editing = {false}
     />
   )

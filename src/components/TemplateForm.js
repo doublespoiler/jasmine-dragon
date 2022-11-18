@@ -9,24 +9,30 @@ export default function TemplateForm(props){
     formTitle = "Edit" + props.tea.name;
   }
   return(
-    <main>
       <form onSubmit={props.formSubmissionHandler} className="form">
         <h1>{formTitle}</h1>
+        <label htmlFor="name">Name: </label>
         <input
           type="text"
           name="name"
-          placeHolder="Tea Name"
+          placeholder="Tea Name"
           defaultValue={teaToEdit.name || ''} />
+        <br />
+        <label htmlFor="origin">Origin: </label>
         <input
           type="text"
           name="origin"
-          placeHolder="Tea Origin"
+          placeholder="Tea Origin"
           defaultValue={teaToEdit.origin || ''} />
+        <br />
+        <label htmlFor="price">Price: </label>
         <input
           type="number"
           name="price"
           step="0.01"
           defaultValue={teaToEdit.price || ''} />
+        <br />
+        <label htmlFor="color">Color: </label>
         <select name="color" defaultValue={teaToEdit.color || "Red"}>
           <option value="Black">Black</option>
           <option value="Green">Green</option>
@@ -36,19 +42,23 @@ export default function TemplateForm(props){
           <option value="Herbal">Herbal</option>
           <option value="Oolong">Oolong</option>
         </select>
+        <br />
+        <label htmlFor="description">Description: </label>
         <input
           type="text"
           name="description"
-          placeHolder="Tea Description"
+          placeholder="Tea Description"
           defaultValue={teaToEdit.description || ''} />
+        <br />
+        <label htmlFor="imageUrl">Image URL: </label>
         <input 
           type="text"
           name="imageUrl"
-          placeHolder="image URL"
+          placeholder="image URL"
           defaultValue={teaToEdit.imageUrl || ''} />
+          <br />
         <button type="submit">{props.buttonText}</button>
       </form>
-    </main>
   )
 }
 

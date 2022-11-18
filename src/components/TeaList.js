@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export default function TeaList(props){
   return(
-    <main className="tea--list">
+    <div className="tea--list">
       {props.teaList.sort().map((tea)=>
         <Tea
           whenTeaClicked={props.onTeaSelection}
@@ -19,7 +19,7 @@ export default function TeaList(props){
           key={tea.id}
         />
       )}
-    </main>
+    </div>
   );
 }
 

@@ -102,10 +102,10 @@ class TeaControl extends React.Component {
       buttonText = "Add Tea"; 
     }
     return (
-      <React.Fragment>
+      <main>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button> 
-      </React.Fragment>
+        <button onClick={this.handleClick} className="main-button">{buttonText}</button> 
+      </main>
     );
   }
 

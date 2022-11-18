@@ -1,0 +1,10 @@
+{
+  "id": v4(),
+  "name": " ",
+  "origin": " ",
+  "price": 4,
+  "color": " ",
+  "imageUrl": " ",
+  "description": " ",
+  "stock": 130
+},

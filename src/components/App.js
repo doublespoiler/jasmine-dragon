@@ -6,9 +6,11 @@ import Footer from './Footer';
 export default function App() {
   return (
     <React.Fragment>
-      <Header />
-      <PageControl />
-      <Footer />
+      <div id="wrapper">
+        <Header />
+        <PageControl />
+        <Footer />
+      </div>
     </React.Fragment>
   );
 }

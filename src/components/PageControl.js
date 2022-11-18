@@ -11,7 +11,7 @@ class TeaControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      masterTeaList: defaultTeaList.data.tea,
+      masterTeaList: defaultTeaList.data.tea.sort((a, b) => a.name.localeCompare(b.name)),
       selectedTea: null,
       editing: false
     };
@@ -34,7 +34,7 @@ class TeaControl extends React.Component {
   handleDeletingTea = (id) => {
     const newMasterTeaList = this.state.masterTeaList.filter(tea => tea.id !== id);
     this.setState({
-      masterTeaList: newMasterTeaList,
+      masterTeaList: newMasterTeaList.sort((a, b) => a.name.localeCompare(b.name)),
       selectedTea: null
     });
   }
@@ -49,7 +49,7 @@ class TeaControl extends React.Component {
       .filter(tea => tea.id !== this.state.selectedTea.id)
       .concat(teaToEdit);
     this.setState({
-      masterTeaList: editedMasterTeaList,
+      masterTeaList: editedMasterTeaList.sort((a, b) => a.name.localeCompare(b.name)),
       editing: false,
       selectedTea: null
     });
@@ -57,7 +57,7 @@ class TeaControl extends React.Component {
 
   handleAddingNewTeaToList = (newTea) => {
     const newMasterTeaList = this.state.masterTeaList.concat(newTea);
-    this.setState({masterTeaList: newMasterTeaList});
+    this.setState({masterTeaList: newMasterTeaList.sort((a, b) => a.name.localeCompare(b.name))});
     this.setState({formVisibleOnPage: false});
   }
 
@@ -73,9 +73,8 @@ class TeaControl extends React.Component {
       .filter(tea => tea.id !== id)
       .concat(teaToEdit);
     this.setState({
-      masterTeaList: editedMasterTeaList
+      masterTeaList: editedMasterTeaList.sort((a, b) => a.name.localeCompare(b.name))
     });
-    console.log("sold" + {teaToEdit})
   }
 
   render(){
@@ -86,10 +85,10 @@ class TeaControl extends React.Component {
       buttonText = "Return to Tea List";
     } else if (this.state.selectedTea != null) {
       currentlyVisibleState = <TeaDetail 
-      tea={this.state.selectedTea} 
-      onClickingDelete={this.handleDeletingTea}
-      onClickingEdit = {this.handleEditClick} 
-      onClickingSell = {this.handleSellingTea}/>
+        tea={this.state.selectedTea} 
+        onClickingDelete={this.handleDeletingTea}
+        onClickingEdit = {this.handleEditClick} 
+        onClickingSell = {this.handleSellingTea}/>
       buttonText = "Return to Tea List";
     } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewTeaForm onNewTeaCreation={this.handleAddingNewTeaToList}/>;
@@ -98,7 +97,7 @@ class TeaControl extends React.Component {
       currentlyVisibleState = <TeaList 
         onTeaSelection={this.handleChangingSelectedTea}
         onTeaSold={this.handleSellingTea}
-        teaList={this.state.masterTeaList} 
+        teaList={this.state.masterTeaList.sort((a, b) => a.name.localeCompare(b.name))} 
       />;
       buttonText = "Add Tea"; 
     }

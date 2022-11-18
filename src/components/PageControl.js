@@ -3,6 +3,7 @@ import NewTeaForm from './NewTeaForm';
 import TeaList from './TeaList';
 import EditTeaForm from './EditTeaForm';
 import TeaDetail from './TeaDetail';
+import defaultTeaList from '../defaultTeaList';
 
 class TeaControl extends React.Component {
 
@@ -10,7 +11,7 @@ class TeaControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      masterTeaList: [],
+      masterTeaList: defaultTeaList.data.tea,
       selectedTea: null,
       editing: false
     };

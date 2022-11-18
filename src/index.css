@@ -15,13 +15,13 @@ code {
 }
 
 main {
-
   padding: 2rem;
   margin: auto;
   background-color: #b8d3be;
+  overflow-y: scroll-smooth;
 }
 
-html {
+#wrapper {
   max-width: 140ch;
   margin: auto;
 }
@@ -52,11 +52,39 @@ html {
 
 .tea--card{
   border: 1px solid black;
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
   align-items: center;
+  margin: 0.25rem 0;
+  justify-content: space-evenly;
 }
 
 .tea--card--thumb{
   width: 6rem;
+  margin-right: 0.5rem;
 }
+
+.tea--card--sell{
+  background-color: orangered;
+  height: 100%;
+  width: auto;
+}
+
+.tea--card--details{
+  width:100%;
+  display: flex;
+  /* justify-content:space-evenly; */
+}
+
+.tea--detail--image{
+  width: 15rem;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  width: 140ch;
+  background: orangered;
+}
+

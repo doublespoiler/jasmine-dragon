@@ -3,14 +3,24 @@ import PropTypes from 'prop-types';
 
 export default function TemplateForm(props){
   let formTitle = "New Tea";
+  let formSubTitle = "";
   let teaToEdit = [];
   if(props.editing){
     teaToEdit = props.tea;
-    formTitle = "Edit" + props.tea.name;
+    formTitle = "Edit " + props.tea.name;
+    formSubTitle = props.tea.id;
   }
   return(
       <form onSubmit={props.formSubmissionHandler} className="form">
-        <h1>{formTitle}</h1>
+        <div className="form--header">
+          <img className="form--image" src={teaToEdit.imageUrl} alt={teaToEdit.name} />
+          <div className="form--title">
+            <h1>{formTitle}</h1>
+            <p>id: {formSubTitle}</p>
+          </div>
+        
+        </div>
+        
         <label htmlFor="name">Name: </label>
         <input
           type="text"

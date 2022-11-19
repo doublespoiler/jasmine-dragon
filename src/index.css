@@ -43,7 +43,7 @@ main {
 
 .tea--card{
   border: 1px solid black;
-  padding: 1rem 1rem;
+  padding: 1em 1rem;
   display: flex;
   
   margin: 0.25rem 0;
@@ -93,7 +93,7 @@ main {
 }
 
 .main-button{
-  height: 5em;
+  height: 5rem;
   margin: auto;
   width: 50%;
   display:block;
@@ -112,5 +112,17 @@ main {
 form{
   margin:auto;
   width: 50%;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.form--header{
+  display:flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.form--image{
+  height: 10rem;
+  width: 10rem;
+  margin-right: 0.5rem;
+  object-fit: cover;
 }

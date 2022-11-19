@@ -27,7 +27,7 @@ export default{
       {
         "id": v4(),
         "name": "Oolong",
-        "origin": "Fujian Province, China",
+        "origin": "Fujian Province",
         "price": 4,
         "color": "Oolong",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Oolong_tea_leaf.jpg",

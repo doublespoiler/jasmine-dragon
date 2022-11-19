@@ -9,6 +9,13 @@ main {
   height: 87vh;
 }
 
+form{
+  margin:auto;
+  width: 50%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 #wrapper {
   max-width: 140ch;
   margin: auto;
@@ -21,7 +28,7 @@ main {
   display: flex;
   align-items: center;
   height: 8vh;
-  background: linear-gradient(0deg, #005013 1.18%, #009f25 100%);
+  background: linear-gradient(0deg, #009f25 1.18%, #005013 100%);
   color: white;
   padding: 1.25rem;
 }
@@ -41,23 +48,18 @@ main {
   font-weight: 500;
 }
 
+.tea--list{
+  width: 90%;
+  margin: auto;
+}
+
 .tea--card{
-  border: 1px solid black;
+  border: 1px solid #9c8245;
   padding: 1em 1rem;
   display: flex;
   
   margin: 0.25rem 0;
   justify-content: space-evenly;
-}
-
-.tea--card--text{
-  display: flex;
-  align-items: center;
-}
-
-.tea--card--sell{
-  display: flex;
-  align-items: center;
 }
 
 .tea--card--thumb{
@@ -71,7 +73,20 @@ main {
   width:100%;
   display: flex;
   justify-self: center;
-  /* justify-content:space-evenly; */
+}
+
+.tea--card--text{
+  display: flex;
+  align-items: center;
+}
+
+.tea--card--sell{
+  display: flex;
+  align-items: center;
+}
+
+.tea--card--button{
+  width: 4rem;
 }
 
 .tea--detail{
@@ -83,13 +98,16 @@ main {
   width: 15rem;
 }
 
-.tea--list{
-  width: 90%;
-  margin: auto;
+.form--header{
+  display:flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
-
-.tea--card--button{
-  width: 4rem;
+.form--image{
+  height: 10rem;
+  width: 10rem;
+  margin-right: 0.5rem;
+  object-fit: cover;
 }
 
 .main-button{
@@ -109,20 +127,4 @@ main {
   align-items: center;
   color: white;
 }
-form{
-  margin:auto;
-  width: 50%;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-.form--header{
-  display:flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-.form--image{
-  height: 10rem;
-  width: 10rem;
-  margin-right: 0.5rem;
-  object-fit: cover;
-}
+

@@ -15,12 +15,11 @@ export default function EditTeaForm (props) {
       imageUrl: event.target.imageUrl.value,
       description: event.target.description.value,
       id: tea.id,
-      stock: tea.stock
+      stock: parseInt(event.target.stock.value)
     });
   }
 
   return (
-    
     <TemplateForm 
       formSubmissionHandler={handleEditTeaFormSubmission} 
       buttonText="Update Tea"

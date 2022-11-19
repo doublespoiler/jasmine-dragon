@@ -5,11 +5,11 @@ import Footer from './Footer';
 
 export default function App() {
   return (
-      <div id="wrapper">
-        <Header />
-        <PageControl />
-        <Footer />
-      </div>
+    <div id="wrapper">
+      <Header />
+      <PageControl />
+      <Footer />
+    </div>
   );
 }
 

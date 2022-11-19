@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Jasmine Dragon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### By Skylan Lew
 
-## Available Scripts
+### A React app for Epicodus Independent Project 13
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+* HTML/CSS
+* Javascript/ES6
+* React 18.2
+* node.js 16.16.0
+* npm 8.11.0
+* uuid
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is a POS and inventory management system for a tea shop, created with React. It uses a Class component to hold its state, and `setState` to change state. The user can Create new teas, Read details of already saved teas, Update already saved teas, and  Delete unneeded teas. The user may sell cups of tea, one at a time, until the amount reaches 0, at which point they will not be able to sell more of that tea.
 
-### `npm test`
+The user can edit `/src/defaultTeaList.js` to add or remove pre-seeded teas, and change their properties. THere is a handy `teaObject.txt` file for easy copy/pasting of the blank object. Unique IDs will be generated automatically, as long as `id` is assigned with `v4()`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup Instructions
 
-### `npm run build`
+### Requires
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* node.js
+* npm
+* React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install/Run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* `git clone https://github.com/doublespoiler/jasmine-dragon.git`
+* `cd jasmine-dragon`
+* `npm install`
+* `npm run start`
+* visit [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+## Known Bugs
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* eslint: import/no-anonymous-default-export with `defaultTeaList.js`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[MIT](https://choosealicense.com/licenses/mit/) `[MIT](https://choosealicense.com/licenses/mit/)`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright (c) 2022 Skylan Lew

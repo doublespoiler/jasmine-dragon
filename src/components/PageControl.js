@@ -5,7 +5,7 @@ import EditTeaForm from './EditTeaForm';
 import TeaDetail from './TeaDetail';
 import defaultTeaList from '../defaultTeaList';
 
-class TeaControl extends React.Component {
+export default class TeaControl extends React.Component {
 
   constructor(props) {
     super(props);
@@ -110,6 +110,4 @@ class TeaControl extends React.Component {
   }
 
 }
-
-export default TeaControl;
 

@@ -6,7 +6,7 @@ export default function Header(){
     <header className="header">
       <img src={logo} className="header--image" alt="logo" />
       <h1 className="header--title">The Jasmine Dragon</h1>
-      <h2 className="header--subtitle">Dramatic, Poetic.</h2>
+      <h2 className="header--subtitle">Tea. Dramatic, Poetic.</h2>
     </header>
   )
 }

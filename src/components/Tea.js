@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Tea(props){
-  
   return(
     <div className="tea--card">
       <div className="tea--card--details" onClick={() => props.whenTeaClicked(props.id)}>

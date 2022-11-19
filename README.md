@@ -19,6 +19,8 @@ This is a POS and inventory management system for a tea shop, created with React
 
 The user can edit `/src/defaultTeaList.js` to add or remove pre-seeded teas, and change their properties. THere is a handy `teaObject.txt` file for easy copy/pasting of the blank object. Unique IDs will be generated automatically, as long as `id` is assigned with `v4()`.
 
+Includes diagram.drawio file with beginning plan of component linking and state passing.
+
 ## Setup Instructions
 
 ### Requires
